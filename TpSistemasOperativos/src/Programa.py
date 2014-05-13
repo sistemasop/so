@@ -2,19 +2,23 @@
 class Programa:
     
     def __init__(self, nombre):
-        ''' Inicializa un programa con un nombre dado.
-
+        ''' Inicializa un programa con:
+            - un nombre dado
+            - una lista de instrucciones vacia
+            - un PCB (cuya relacion se crea, cuando se ejecuta
+              el programa)
         '''
         self.nombre = nombre
         self.instrucciones = []
-        self.pcb
+        self.pcb # es una sola instancia o hay que guardar todas 
+                 # las relaciones cada vez que se ejecuta el 
+                 # porgrama????
            
     def printIns(self):
-        #print(self.instrucciones)
         for i in self.instrucciones:
             i.verInstruccion()
         
-    def addIns(self, elem):
+    def addIns(self, instruccion):
         self.instrucciones.append(elem)
 
     def popIns(self):
