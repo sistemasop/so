@@ -1,3 +1,3 @@
-class CPU
+class CPU:
 
-	def __init__(self)
+	def __init__(self):

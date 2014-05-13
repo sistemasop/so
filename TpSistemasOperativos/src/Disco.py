@@ -1,6 +1,5 @@
 class Disco:
 
-  
     def __init__(self):
         ''' Inicializa un disco vacio, es decir, sin programas.
         Su contenido (programas que se guardan en el) se 

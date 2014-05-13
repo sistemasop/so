@@ -1,4 +1,4 @@
-import EstadoPCB
+import EstadoPCB:
 
 class PCBRunning(EstadoPCB):
     
