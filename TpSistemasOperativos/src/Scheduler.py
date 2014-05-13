@@ -1,3 +1,3 @@
-class Scheduler
+class Scheduler:
 
 	def __init__(self)

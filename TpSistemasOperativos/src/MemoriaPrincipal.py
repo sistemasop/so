@@ -12,7 +12,7 @@ class MemoriaPrincipal:
     		celdas[proximaACargar] = (__proximaACargar, instruccion) #Esto esta mal pero la idea es que en cada celda de 
     																 # Memoria se guarde la direccion de Memoria y su
     																 # instruccion asociada 
-    		__proximaACargar = __proximaACargar + 1
+    		__proximaACargar = celdas[__proximaACargar + 1]
 
 
 
