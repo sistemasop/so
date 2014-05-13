@@ -2,6 +2,9 @@
 class Programa:
     
     def __init__(self, nombre):
+        ''' Inicializa un programa con un nombre dado.
+
+        '''
         self.nombre = nombre
         self.instrucciones = []
         self.pcb
@@ -18,5 +21,6 @@ class Programa:
         self.instrucciones().pop()
 
     def run(self, so):
+        # Aca deberiamos crear un PCB?
         for i in self.instrucciones:
             i.run(so)
