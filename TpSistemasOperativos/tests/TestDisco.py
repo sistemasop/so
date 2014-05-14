@@ -5,7 +5,6 @@ from Instruccion import *
 
 class Test(unittest.TestCase):
 
-
     def setUp(self):
         #Creo una instruccion
         self.instruccion = Instruccion("Instruccion 1")
@@ -18,13 +17,14 @@ class Test(unittest.TestCase):
        
 
     def testAgregarPrograma(self):
-        self.map = {}
-        self.map [self.programa.nombre] = self.programa.instrucciones
+        self.mapEsperado = {}
+        self.mapEsperado [self.programa.nombre] = self.programa.instrucciones
         self.disco.agregarPrograma(self.programa)
         
-        self.assertEqual(self.map, self.disco.contenido, "El programa no se encuentra dentro del disco")        
+        self.assertEqual(self.mapEsperado, self.disco.contenido, "El programa no se encuentra dentro del disco")        
 
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
     unittest.main()
+    print(self.disco.contenido)

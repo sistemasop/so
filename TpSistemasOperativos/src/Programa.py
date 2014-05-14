@@ -25,6 +25,6 @@ class Programa:
         self.instrucciones().pop()
 
     def run(self, so):
-        # Aca deberiamos crear un PCB?
-        for i in self.instrucciones:
-            i.run(so)
+        __pcb = PCB() # Una vez que se ejecuta un programa, se debe crear un PCB
+        for i in self.instrucciones: # Esta linea y la de abajo, no entiendo
+            i.run(so)                # para que estan

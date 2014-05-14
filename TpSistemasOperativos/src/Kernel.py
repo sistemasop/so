@@ -1,11 +1,13 @@
+from Memoria import *
+from Disco import *
 
 class Kernel:
 
-    def __init__(self, so, disco):
+    def __init__(self, so, disco, memoria):
         self.so = so                # conoce a standar output
         self.disco = disco
         self.procesos = [] #tenemos que cambiar la estructura
-        #self.memoria = memoria
+        self.memoria = memoria
         self.numeroDeProcesos = 0
 
     def load(self, prog):
